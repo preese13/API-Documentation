@@ -1,0 +1,31 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Employee Response";
+    string field1 = "Result";
+    string field1DataType = "Employee Result (See Employee Result Section)";
+    string field1Description = "An object that contains a PayrollId property reflecting the unique employee identifier supplied by the payroll partner.";
+    string field2 = "Messages";
+    string field2DataType = "Array<string>";
+    string field2Description = "A list of status messages for end-user consumption. When an update from Employee Navigator is unsuccessful, the list of messages returned by the Payroll Company will be displayed to a user so that any appropriate changes can be made and another update can be sent to the Payroll Company. ";
+        
+}
+
+<h1>@header</h1>
+<div class="tableContainer">
+    <div id="bold" class="tableRow">
+    <p>Field</p>
+    <p>Data Type</p>
+    <p>Description</p>
+</div>
+    <div class="tableRow">
+        <p>@field1</p>
+        <p>@field1DataType</p>
+        <p>@field1Description</p>
+    </div>
+    <div class="tableRow">
+        <p>@field2</p>
+        <p>@field2DataType</p>
+        <p>@field2Description</p>
+    </div>
+</div>

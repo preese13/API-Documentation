@@ -1,0 +1,27 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "'Classes' in Employee Navigator";
+    string paragraph1 = "Often referred to as Cost Centers by payroll companies, Employee Navigator has a dynamic class structure that supports benefit variations within a company.  For example, an employer may charge employees in Department 1 $50 for health insurance and $100 to employees in Department 2. Consequently, all companies may have a variable class structure that needs to be taken into account.  Employee Navigator supports the following benefit classifications: ";
+    string listIntro = " Employee Navigator supports the following benefit classifications: ";
+    string listItem1 = "Benefit Class";
+    string listItem2 = "Department";
+    string listItem3 = "Division";
+    string listItem4 = "Business Units:  See next section";
+    string listItem5 = "Offices";
+    string listItem6 = "Dynamic Classes (Intersections of the above classes or other fields such as state) ";
+    string note = "Note: Classes are not currently exchanged between Employee Navigator and Payroll.";
+}
+
+<h1>@header</h1>
+<p>@paragraph1</p>
+<p class = "listIntro">@listIntro</p>
+<ul>
+    <li><span id="colorController">@listItem1</span></li></br>
+    <li><span id="colorController">@listItem2</span></li></br>
+    <li><span id="colorController">@listItem3</span></li></br>
+    <li><span id="colorController">@listItem4</span></li></br>
+    <li><span id="colorController">@listItem5</span></li></br>
+    <li><span id="colorController">@listItem6</span></li>
+</ul>
+<p id="bold">@note </p>

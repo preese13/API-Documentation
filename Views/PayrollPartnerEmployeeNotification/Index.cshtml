@@ -1,0 +1,30 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Payroll Partner Employee Notification";
+    string field1 = "CopmanyId";
+    string dataType1 = "String";
+    string description1 = "Payroll company identifier supplied by payroll partner.   Example:  CORP1 ";
+    string field2 = "PayrollId";
+    string dataType2 = "String";
+    string description2 = "Unique employee identifier supplied by the payroll partner.  Example:  9876543 ";
+}
+
+<h1>@header</h1>
+<div class="tableContainer">
+    <div class="tableRow">
+        <p><span id="bold">Field</span> </p>
+        <p><span id="bold">Data Type</span> </p>
+        <p><span id="bold">Description</span> </p>
+    </div>
+    <div class="tableRow">
+        <p>@field1</p>
+        <p>@dataType1</p>
+        <p>@description1</p>
+    </div>
+    <div class="tableRow">
+        <p>@field2</p>
+        <p>@dataType2</p>
+        <p>@description2</p>
+    </div>
+</div>

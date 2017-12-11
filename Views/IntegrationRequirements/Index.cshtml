@@ -1,0 +1,37 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Integration Requirements";
+    string listIntro = "Below is a summary of the integration components required in order for the integration function properly:";
+    string listItem1 = "Consume Employee Navigator’s demographic API";
+    string listItem2 = "Consume Employee Navigator’s deduction API ";
+    string listItem3 = "Notify Employee Navigator of a demographic change for agreed upon fields ";
+    string listItem4 = "Have an API available for Employee Navigator to retrieve demographic data";
+    string listItem5 = "Make reports available to HR for discrepancy analysis: ";
+    string listItem6 = "Manage a new employee or change of address where the tax authority has not been set-up in payroll.  (Alerting system) ";
+    string listItem7 = "Identify incomplete fields in the payroll system for employees added in Employee Navigator and allow payroll user to complete the data entry for the new hire ";
+    string listItem8 = "Permit payroll user to retry failed transmissions ";
+    string listItem9 = "Provide transmission status and insight to payroll users ";
+    string listItem10 = "If you are a software provider with multiple bureaus, the bureaus need to be identified by API Secret and API Key. With a bureau-specific API Secret and Key, that will be provided to EN by the payroll software provider, the payroll software provider will be able to identify which bureau is tied to the notification. ";
+    string listSubItem1 = "Deduction report ";
+    string listSubItem2 = "Demographic report";
+}
+
+<h1>@header</h1>
+<p class="listIntro">@listIntro</p>
+<ol>
+    <li><span id="colorController">@listItem1</span></li></br>
+    <li><span id="colorController">@listItem2</span></li></br>
+    <li><span id="colorController">@listItem3</span></li></br>
+    <li><span id="colorController">@listItem4</span></li></br>
+    <li><span id="colorController">@listItem5</span></li>
+        <ul>
+            <li><span id="colorController">@listSubItem1</span></li></br>
+            <li><span id="colorController">@listSubItem1</span></li>
+        </ul>
+    <li><span id="colorController">@listItem6</span></li></br>
+    <li><span id="colorController">@listItem7</span></li></br>
+    <li><span id="colorController">@listItem8</span></li></br>
+    <li><span id="colorController">@listItem9</span></li></br>
+    <li><span id="colorController">@listItem10</span></li>
+</ol>

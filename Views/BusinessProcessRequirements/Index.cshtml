@@ -1,0 +1,24 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Business Process Requirements for Partners";
+    string sectionHead = "Partner Support Services";
+    string listIntro = "We expect the Payroll partners to provide the following services to our mutual customers:";
+    string listItem1 = "Partner is responsible for all sales activities and initial setup of payroll for new customers.  Employee Navigator will provide detailed documentation.";
+    string listItem2 = "Partner is responsible for onboarding customer, educating the customer about the capabilities and processes for the integrated product, and for troubleshooting issues.  Employee Navigator will provide the Payroll partner with visibility within the Partner Portal to view transmission data, transmission errors, and general employee information required for troubleshooting. ";
+    string listItem3 = "Only the Payroll partner may contact Employee Navigator for troubleshooting assistance";
+    string sectionHead2 = "Management of Non-Employees (such as 1099s) ";
+    string paragraph2 = "At this time, 1099 employees should not be included in transmissions to Employee Navigator.  Users have the option to block non-employees from being exchanged by “blocking” the synchronization in Employee Navigator";
+
+}
+
+<h1>@header</h1>
+<h3>@sectionHead</h3>
+<p class="listIntro">@listIntro</p>
+<ol>
+    <li><span id="colorController">@listItem1</span></li></br>
+    <li><span id="colorController">@listItem2</span></li></br>
+    <li><span id="colorController">@listItem3</span></li>
+</ol>
+<h3>@sectionHead2</h3>
+<p>@paragraph2</p>

@@ -1,0 +1,30 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Notification Response";
+    string field1 = "Result";
+    string dataType1 = "Empty Object";
+    string description1 = "Currently, no result data is required in response to a Notification record. However, the Result property should be included in all responses, and it may be used in the future.";
+    string field2 = "Messages";
+    string dataType2 = "Array<string>";
+    string description2 = "A list of status messages for end-user consumption. When a notification is unsuccessful, the list of returned messages should be displayed to a user so that any appropriate changes can be made and another notification can be sent. ";
+}
+
+<h1>@header</h1>
+<div class="tableContainer">
+    <div class="tableRow">
+        <p><span id="bold">Field</span> </p>
+        <p><span id="bold">Data Type</span> </p>
+        <p><span id="bold">Description</span> </p>
+    </div>
+    <div class="tableRow">
+        <p>@field1</p>
+        <p>@dataType1</p>
+        <p>@description1</p>
+    </div>
+    <div class="tableRow">
+        <p>@field2</p>
+        <p>@dataType2</p>
+        <p>@description2</p>
+    </div>
+</div>

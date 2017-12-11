@@ -1,0 +1,22 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Employee Result Object";
+    string field = "PayRollId";
+    string dataType = "String";
+    string description = "Unique employee identifier supplied by the payroll partner.    Example:  9876543";
+}
+
+<h1>@header</h1>
+<div class="tableContainer">
+    <div id="bold" class="tableRow">
+    <p>Field</p>
+    <p>Data Type</p>
+    <p>Description</p>
+</div>
+    <div  class="tableRow">
+        <p>@field</p>
+        <p>@dataType</p>
+        <p>@description</p>
+    </div>
+</div>

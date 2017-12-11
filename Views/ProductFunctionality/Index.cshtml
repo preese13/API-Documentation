@@ -1,0 +1,70 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Product Functionality";
+    string sectionHeader1 = "Bi-Directional Demographics";
+    string paragraph1 = "The API supports bi-directional exchange of data between Employee Navigator and the Payroll system. New hires, terminations, and demographic updates can be made in either system. Employee Navigator uses a change tracking layer to identify changes that need to be communicated to the Payroll system.  Changes identified in Employee Navigator will be pushed to the Payroll system as they occur.  Employee Navigator sends changes within 30 seconds.";
+    string paragraph2 = "Payroll providers looking to send data to Employee Navigator will need to create a similar change tracking mechanism which will then allow the Payroll system to notify Employee Navigator when changes are available in the Payroll system. Employee Navigator will then get the changed employee record from the Payroll system. ";
+    string paragraph3 = "Any field that is being sent from either system must be bi-directional. We will not lock down a demographic field other than compensation.  ";
+    string paragraph4 = "As part of the setup process, Employee Navigator will provide the ability for the Payroll provider to select the data elements they will be sending to Employee Navigator (“subscribed fields”).  Employee Navigator will send all data elements available in the API definition to the Payroll system for informational purposes.  Only those data elements “subscribed” by payroll partner should be updated in Payroll system.  ";
+    string paragraph5Bold = "Removing data with blank values:";
+    string paragraph5 = "Partners will need to discuss with Employee Navigator the process to remove data from a record.  For example, an employee moved from an address which includes an apartment # on Address Line 2, to a house and Line 2 with the apartment # is no longer needed. Currently, when Employee Navigator sends a blank value for a field that is “subscribed” by the Payroll vendor, the field in the Payroll system should be overwritten with a blank.  ";
+    string sectionHeader2 = "Base Compensation: Owned by Payroll ";
+    string paragraph6 = "Payroll is the system of record for compensation changes. Employee Navigator will collect base compensation information during the New Hire process when employees are created in Employee Navigator and pass that data to the Payroll provider with the new hire record. Future base compensation changes will always occur in payroll and flow to Employee Navigator.  Employee Navigator will lock down base compensation fields in our system, including annual base salary, hourly rate and hours per week. ";
+    string ulIntro = "Compensation fields owned by payroll ";
+    string ulItem1 = "Annual base salary ";
+    string ulItem2 = "Compensation basis";
+    string ulItem3 = "Hourly rate";
+    string ulItem4 = "Hours per week/rate ";
+    string paragraph7 = "Employee Navigator uses the annualized income of employees to calculate the benefit and premium for salary based benefits such as one times salary life insurance or disability benefit that provides 60% of salary.  If payroll provides Hours per week for an hourly employee, we will calculate the annual salary, or you can provide the annual salary.  If you can do neither, Employee Navigator’s incomplete employee report will show HR those employees who have neither a benefit salary or annual salary.  If hours per week and annual salary are sent, but do not match, then we will accept the information and the HR user can input the Benefit Salary, which will be used in the calculation of salary-based benefits. ";
+    string sectionHeader3 = "Payroll Deductions";
+    string paragraph8 = "Employee Navigator is the system of record for recurring benefit deductions. Recurring benefit deductions will always occur in Employee Navigator and flow to Payroll.  There are several important things to know about how deductions are handled";
+    string olItem1 = "Deductions must be either pre- or post-tax for a particular benefit and cannot vary by employee.   Taxation for exceptions such as S Corp shareholders must be handled manually in the payroll system.";
+    string olItem2 = "When an employee initially elects a benefit but then declines the benefit before the benefit takes effect (i.e., the employee changes his mind during the new hire enrollment window), Employee Navigator will pass a deduction end date equal to the enrollment start date and the deduction amount will equal $0.  ";
+    string olItem3 = "Companies that have benefits set-up that have employers paid benefits will still be passed but will show as a warning in Employee Navigator";
+    string olItem4 = "Deduction Code Settings: We have created Deduction Code Settings that allow a user to choose if they want deductions to be sent over to payroll for particular plans. The options are as follows:";
+    string subListItem1 = "Always Send- deductions for the selected plan will always be sent to payroll ";
+    string subListItem2 = "Never Send- deductions for the selected plan will never be sent to payroll";
+    string subListItem3 = "Don’s send $0- deductions that are $0 will not be sent to payroll (ex. Employer paid plans)";
+    string sectionHeader4 = "Security ";
+    string paragraph9 = "All API requests will be sent over HTTPS. Each request will include an authorization token to identify the sender of the request. Employee Navigator will generate tokens for each Payroll partner, which will be used by the payroll system when sending requests to Employee Navigator. In addition, each payroll partner is responsible for generating tokens for Employee Navigator, which will be used by Employee Navigator when sending requests to the payroll system. The tokens can be accessed via the Partner portal on the Employee Navigator site. Tokens generated by Employee Navigator for use by the payroll partner can be reset in the Partner portal. Employee Navigator is investigating using IP ACL's, reverse IP look ups, and mutual SSL/TLS as further security mechanisms.";
+    string sectionHeader5 = "Request Error Handling ";
+    string paragraph10 = "Standard HTTP status codes (https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) should be sent in response to each API request. Employee Navigator will assume that any response with a 200-series status code (i.e., 200-299) was a successful request, regardless of messaging in the response body. EN will treat all responses with status codes that are not in the 200 series as unsuccessful. For technical debugging and auditing purposes, it is strongly preferred that a relevant status code (e.g., a 401 when the authentication token is missing) is sent in the response to each request (as opposed to, for example, always sending a 200 for success and a 500 for failure). Every unsuccessful response should also include a Messages property in the response body. The Messages property should be a string array of userfriendly messages, which will ultimately be displayed to an end-user via the Employee Navigator site. Whenever possible, these messages should provide enough information to enable a user to access EN and/or the payroll system to make the necessary changes in order to successfully resubmit the request. Note that the Records section of this document contains the specific structure of each type of Response object, but all Response types contain a Messages property. ";
+    
+}
+<h1>@header</h1>
+<h3>@sectionHeader1</h3>
+<p>@paragraph1</p>
+<p>@paragraph2</p>
+<p>@paragraph3</p>
+<p>@paragraph4</p>
+<p><span id="bold">@paragraph5Bold</span> @paragraph5</p>
+<h3>@sectionHeader2</h3>
+<p>@paragraph6</p>
+<p class="listIntro">@ulIntro</p>
+<ul>
+    <li><span id="colorController">@ulItem1</span></li></br>
+    <li><span id="colorController">@ulItem2</span></li></br>
+    <li><span id="colorController">@ulItem3</span></li></br>
+    <li><span id="colorController">@ulItem4</span></li>
+</ul>
+<p>@paragraph7</p>
+<h3>@sectionHeader3</h3>
+<p class="listIntro">@paragraph8</p>
+<ol>
+    <li><span id="colorController">@olItem1</span></li></br>
+    <li><span id="colorController">@olItem2</span></li></br>
+    <li><span id="colorController">@olItem3</span></li></br>
+    <li>
+        <span id="colorController">@olItem4</span>
+        <ul>
+            <li><span id="colorController">@subListItem1</span></li></br>
+            <li><span id="colorController">@subListItem2</span></li></br>
+            <li><span id="colorController">@subListItem3</span></li>
+        </ul>
+    </li>
+</ol>
+<h3>@sectionHeader4</h3>
+<p>@paragraph9</p>
+<h3>@sectionHeader5</h3>
+<p>@paragraph10</p>

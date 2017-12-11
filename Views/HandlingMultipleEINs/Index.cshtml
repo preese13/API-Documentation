@@ -1,0 +1,11 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Handling Multiple EINs";
+    string note = "NOTE:  IN SOME INSTANCES EMPLOYEE NAVIGATOR MAY NOT HAVE BEEN SET-UP PROPERLY SEPARATING CONTROL GROUPS. ";
+    string paragraph = "Affiliated or control group employers, generally with 50% or more common ownership, may collectively purchase a single health insurance plan and administer it through a single Company in Employee Navigator.  For example, Individual 1 may own Widget Company 1 and Widget Company 2 and may have collectively established “Widget Company” in Employee Navigator and added employees from both companies.  In such an example, the employees in Employee Navigator MUST be segregated by their Federal Tax ID and the 2 companies will be identified as separate Subscriber Groups in Employee Navigator.  The Subscriber Group is a new concept that is another way for a vendor to define employees in Employee Navigator. It allows for multiple connections to be made under one EN company umbrella. For example, say you have group with multiple EINs built as a single company in Employee Navigator. Each EIN has a different payroll system configured for their specific group. Subscriber groups allow you to make multiple payroll connections within one Employee Navigator company umbrella. ";
+}
+
+<h1>@header</h1>
+<p>@paragraph</p>
+<p><span id="bold">@note</span></p>

@@ -1,0 +1,14 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Employee Navigator Resources";
+    string header = "Employee Navigator Resources";
+    string paragraph1 = "Employee Navigator push resources allow a payroll partner to receive a full individual employee demographic and benefit deduction information from Employee Navigator when data changes in the Employee Navigator system.  They require the partner to implement specific web services on their hosts. ";
+    string paragraph2 = "Endpoints can be defined by the payroll partner and configured in Employee Navigator. The endpoint URL can contain tokens for the company identifier and the employee identifier, which will be swapped for the current values when the request is sent. This means that: company_id and :employee_id will reflect values assigned by payroll. Employee Navigator will capture the company ID assigned by payroll in our vendor portal when a company is approved for participation. The employee ID assigned by payroll will be captured by Employee Navigator during the discrepancy process or when a new hire is created in either system";
+    string paragraph3 = "Employee Navigator’s production endpoints are hosted at https://www.employeenavigator.com/api/v1. :en_api_version is v1 in all requests";
+}
+
+<h1>@header</h1>
+<p>@paragraph1</p>
+<p>@paragraph2</p>
+<p>@paragraph3</p>
+

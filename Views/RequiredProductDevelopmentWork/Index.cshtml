@@ -1,0 +1,79 @@
+@{
+    Layout = "_Layout";
+    string header = "Product Development Work";
+    string sectionHead = "System Capabilities";
+    string paragraph1 = "In order to become an Employee Navigator Partner for Payroll, we expect our Payroll partners to provide the following minimum system capabilities:";
+    string paragraph2Bold = "Ability to track changes in real time.";
+    string paragraph2 = "The Employee Navigator payroll integration assumes that the payroll system is capable of tracking individual field level changes and sending notifications of changes to Employee Navigator within 60 seconds. ";
+    string paragraph3Bold = "Ability to complete New Hire records sent from Employee Navigator";
+    string paragraph3 = " If you are accepting new employees from EN, payroll providers need a graceful way to complete an “incomplete” employee posted by Employee Navigator to allow employee to be considered “payroll system complete”.  For example, a Payroll system user should be able to identify incomplete employee fields or you can incorporate the functionality to restart a new hire wizard.  This functionality would be identical to a payroll system that accepts an incomplete employee record from an ATS. ";
+    string paragraph4Bold = "User Friendly Error Messaging: ";
+    string paragraph4 = " Payroll partners must provide helpful and easy-to use troubleshooting messages for HR users. ";
+    string subSection1Paragraph4 = "If a record brought in from Employee Navigator errors, the payroll system must track the error, present the error to the user, and trigger a new request from Employee Navigator.  If any part of the record errors, the Partner is expected to reject the entire record. ";
+    string subSection2Paragraph4 = "Partner should also track any failed requests to the Employee Navigator API and present easy-to-understand error messaging to user when a record from the Payroll system fails to send to Employee Navigator.";
+    string paragraph5Bold = "Ability to alert users of changes received from Employee Navigator";
+    string paragraph5 = "Payroll partners must provide a notification mechanism that indicates to the user when demographic or deduction updates are sent from Employee Navigator to the Payroll system. The Payroll system user may need to take action based on what data element was changed.  ";
+    string sectionHead2 = "Reporting";
+    string section2Intro = "Payroll providers must develop the following standard reports and make them available to customers:  ";
+    string ol1Section1Bold = "Demographic Report - ";
+    string ol1Section1 = "This is an employee census report containing all data elements to be exchanged between the two systems. It should be produced as a .xls file. The customer will load this file into Employee Navigator, identify discrepancies, and indicate which data elements should be updated in each system.  This report must include SSN, first name, last name, Payroll ID (employee id), compensation, compensation effective date, compensation type and every other field that is being exchanged between the two systems. It should also include the employee’s original hire date and most recent hire date. Employee Navigator will use these fields to properly compare dates between the systems. Only the most recent hire date will be exchanged. ";
+    string ol1Section2Bold = "Report of Deduction Codes – ";
+    string ol1Section2 = "This is a listing of all active benefit deduction codes in the Payroll system for the customer.  The customer will use this to confirm that the deduction codes are setup identically between the two systems before any data is synchronized. ";
+    string ol1Section3Bold = "Employee Deduction Report - ";
+    string ol1Section3 = "This is a listing of all deductions by employee.  It should contain SSN, first name, last name, Payroll Id (employee id), deduction code, and deduction amount and, like the demographic report, should be produced as a .xls file. This report should include only active employees and should allow the user to specify only those deduction codes that are “mapped” between the two systems. The customer will load this file into Employee Navigator after completing the demographic discrepancy audit to identify deduction discrepancies, and indicate which, if any, deductions should be corrected in the Payroll system via the discrepancy tool, which utilizes the API.";
+    string sectionHead3 = "Technical Discussions";
+    string paragraph6 = "Payroll providers will need to engage in discussion with Employee Navigator to confirm the following items are handled appropriately:";
+    string ol2Section1 = "Demographic";
+    string ul1Section1 = "Blanks (“NULL”) in data exchanged";
+    string ul1Section2 = "Changes to hire and term dates ";
+    string ul1Section3 = "Rehire process ";
+    string ul1Section4 = "1099’s who change to W2:  1 or 2 records ";
+    string ul1Section5 = "Compensation:  hourly/Salary/hours worked";
+    string ul1Section6 = "Tax implications for accepting a change of address from EN ";
+    string ul1Section7 = "Employees that are not exchanged";
+    string ol2Section2 = "Deductions";
+    string ul2Section1 = "Null coverage deductions:  Removing a mistaken payroll deduction";
+
+}
+
+<h1>@header</h1>
+<h3>@sectionHead</h3>
+<p>@paragraph1</p>
+<p><span id="colorController"><span id="bold">@paragraph2Bold</span> @paragraph2</span></p>
+<p><span id="colorController"><span id="bold">@paragraph3Bold</span> @paragraph3</span></p>
+<p><span id="colorController" ><span id="bold">@paragraph4Bold</span>@paragraph4 </span></p>
+<ol>
+    <li><span id="colorController">@subSection1Paragraph4</span></li></br>
+    <li><span id="colorController">@subSection2Paragraph4</span></li></br>
+</ol>
+<p><span id="colorController"><span id="bold">@paragraph5Bold</span> @paragraph5</span></p>
+<h3>@sectionHead2</h3>
+<p>@paragraph5</p>
+<p class="listIntro">@section2Intro</p>
+<ol>
+    <li><span id="colorController"><span id="bold">@ol1Section1Bold</span> @ol1Section1</span></li></br>
+    <li><span id="colorController"><span id="bold">@ol1Section2Bold</span> @ol1Section2</span></li></br>
+    <li><span id="colorController"><span id="bold">@ol1Section3Bold</span> @ol1Section3</span></li></br>
+</ol>
+<h3>@sectionHead3</h3>
+<p class="listIntro">@paragraph6</p>
+<ol>
+    <li>
+        <p><span id="colorController">@ol2Section1</span>
+        <ul>
+            <li><span id="colorController">@ul1Section1</span></li></br>
+            <li><span id="colorController">@ul1Section2</span></li></br>
+            <li><span id="colorController">@ul1Section3</span></li></br>
+            <li><span id="colorController">@ul1Section4</span></li></br>
+            <li><span id="colorController">@ul1Section5</span></li></br>
+            <li><span id="colorController">@ul1Section6</span></li></br>
+            <li><span id="colorController">@ul1Section7</span></li>
+        </ul>
+    </li>
+    <li>
+        <p><span id="colorController">@ol2Section2</span></p>
+        <ul>
+            <li><span id="colorController">@ul2Section1</span></li>
+        </ul>
+    </li>
+</ol>

@@ -1,0 +1,30 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Deduction Response";
+    string field1 = "Result";
+    string field1DataType = "Empty Object";
+    string field1Description = "Employee Navigator does not currently require any result data in response to a Payroll Deduction record sent to the Payroll company. However, the Result property should be included in all partner responses, and it may be used in the future.";
+    string field2 = "Messages";
+    string field2DataType = "Array<string>";
+    string field2Description = "A list of status messages for end-user consumption. When an update from Employee Navigator is unsuccessful, the list of messages returned by the Payroll Company will be displayed to a user so that any appropriate changes can be made and another update can be sent to the Payroll Company. ";
+}
+
+<h1>@header</h1>
+<div class="tableContainer">
+    <div class="tableRow">
+        <p><span id="bold">Field</span> </p>
+        <p><span id="bold">Data Type</span> </p>
+        <p><span id="bold">Description</span> </p>
+    </div>
+<div class="tableRow">
+    <p>@field1</p>
+    <p>@field1DataType</p>
+    <p>@field1Description</p>
+</div>
+<div class="tableRow">
+    <p>@field2</p>
+    <p>@field2DataType</p>
+    <p>@field2Description</p>
+</div>
+</div>

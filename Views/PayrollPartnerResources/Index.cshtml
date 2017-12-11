@@ -1,0 +1,90 @@
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "Payroll Partner Resources";
+    string paragraph1 = "The Payroll Partner pull resource allows Employee Navigator to extract an individual employee demographic record from payroll on an as-needed basis (e.g., in response to a notification of a data update). Endpoints can be defined by the payroll partner and configured in Employee Navigator. The endpoint URL can contain tokens for the company identifier and the employee identifier, which will be swapped for the current values when the request is sent.";
+    string sectionTitle1 = "Single Employee";
+    string table1Row1Left = "HTTP Method:";
+    string table1Row1Right = "GET";
+    string table1Row2Left = "Content-Type:";
+    string table1Row2Right = "text/JSON";
+    string table1Row3Left = "Default Endpoint: ";
+    string table1Row3Right = "/:en_api_version/:company_id/employee/:employee_id ";
+    string table1Row4Left = "Returns: ";
+    string table1Row4Right = "Employee Record";
+    string paragraph2 = "Payroll Partner push notifications allow Employee Navigator to receive notifications from our payroll partners when a new hire is created or one of the agreed upon data exchange fields of an individual employee demographic record has changed in the Payroll system. Employee Navigator will then initiate a pull request to retrieve the full employee record from the payroll partner"; 
+    string sectionTitle2 = "Employee Notification";
+    string table2Row1Left = "HTTP Method: ";
+    string table2Row1Right = "POST";
+    string table2Row2Left = "Endpoint: ";
+    string table2Row2Right = "/api/v1/notification/:company_id/:employee/:employee_id";
+    string table2Row3Left = "Body: ";
+    string table2Row3Right = "Payroll Partner Employee Notification";
+    string table2Row4Left = "Returns: ";
+    string table2Row4Right = "Notification Response";
+    string sectiontitle3 = "Critical Programming Notes: ";
+    string ulItem1 = "Example of Employee Response: { 'Result'; { 'PayrollId': '123' }, 'Messages': [ ] } ";
+    string ulItem2 = "Payroll partners MUST have a method for preventing a “round trip” notification to Employee Navigator.  For example, when Employee Navigator sends a change to the Payroll system, Payroll system must recognize that the change originated from Employee Navigator and NOT send a notification of a change back to Employee Navigator. ";
+    string ulItem3 = "It is strongly preferred that Payroll partners only notify Employee Navigator when changes occur to demographic fields that the partner and Employee Navigator have agreed to exchange.  Prior to launching the integration with Employee Navigator, the Payroll partner and Employee Navigator will agree on the demographic fields to exchange. These fields are identified within the Employee Navigator application and will control which fields are updated within Employee Navigator when a new record is pulled from Payroll and which fields, when changed, will trigger pushes of demographic data from Employee Navigator to the Payroll partner. ";
+    string ulItem4 = "Employee Navigator will always include all data elements included in the API definition when sending data to the Payroll system. The Payroll system should only “read” those fields that have been agreed upon to be exchanged.  ";
+    string ulItem5 = "Do NOT send a termination date on an active employee or an employee being re-hired. Receipt of a termination date is Employee Navigator’s indication to terminate the employee.  ";
+    string ulItem6 = "If you are a software provider with multiple bureaus, the bureaus need to be identified by a unique API Secret and API Key. ";
+}
+
+<h1>@header</h1>
+<p>@paragraph1</p>
+<div>
+    <h3>@sectionTitle1</h3>
+    <div class="smallTableContainer">
+        <div class="smallTableRow">
+            <p>@table1Row1Left</p>
+            <p>@table1Row1Right</p>
+        </div>
+        <div class="smallTableRow">
+            <p>@table1Row2Left</p>
+            <p>@table1Row2Right</p>
+        </div>
+        <div class="smallTableRow">
+            <p>@table1Row3Left</p>
+            <p>@table1Row3Right</p>
+        </div>
+        <div class="smallTableRow">
+            <p>@table1Row4Left</p>
+            <p>@table1Row4Right</p>
+        </div>
+    </div>
+</div>
+<p>@paragraph2</p>
+<div>
+    <h3>@sectionTitle2</h3>
+    <div class="smallTableContainer">
+        <div class="smallTableRow">
+            <p>@table2Row1Left</p>
+            <p>@table2Row1Right</p>
+        </div>
+        <div class="smallTableRow">
+            <p>@table2Row2Left</p>
+            <p>@table2Row2Right</p>
+        </div>
+        <div class="smallTableRow">
+            <p>@table2Row3Left</p>
+            <p>@table2Row3Right</p>
+        </div>
+        <div class="smallTableRow">
+            <p>@table2Row4Left</p>
+            <p>@table2Row4Right</p>
+        </div>
+    </div>
+</div>
+<h3>@sectiontitle3</h3>
+<p>@ulItem1</p>
+<p>@ulItem2</p>
+<p>@ulItem3</p>
+<p>@ulItem4</p>
+<p>@ulItem5</p>
+<p>@ulItem6</p>
+
+
+
+

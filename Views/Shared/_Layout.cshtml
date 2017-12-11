@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - apiPartnerResource</title>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <script src="https://use.fontawesome.com/87d692dbe8.js"></script>
+
+    
+</head>
+<body>
+    <nav>
+        <a href="/Home" class="navbar"><img src="images\ENAV-WhiteLogo.png"></a>
+        <i id="hamburger" class="fa fa-bars fa-5x" aria-hidden="true"></i>
+        <i id="cross" class="fa fa-times fa-5x" aria-hidden="true"></i>
+    </nav>
+    <div id="bodyMain">
+        <div id="sideNav">
+            <div id="sideNavTitle">
+                <h2>Glossary</h2>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/Overview/index">Overview</a>
+                </div>
+                <div class="rowItemRight">
+                   <a href="/EmployeeNavigatorOverview/index">Employee Navigator Overview</a> 
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/IntegrationRequirements/Index">Integration Requirements</a> 
+                </div>
+                <div class="rowItemRight">
+                  <a href="/EmployeeNavigatorClasses/index">"Classes" in Employee navigator</a>   
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                   <a href="/HandlingMultipleEINs/index">Handling Multiple EINs </a>  
+                </div>
+                <div class="rowItemRight">
+                   <a href="/apiResources/index">API Resources</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                     <a href="/EmployeeNavigatorResources/index">Employee Navigator Resources</a> 
+                </div>
+                <div class="rowItemRight">
+                    <a href="/PayrollPartnerResources/index">Payroll Partner Resources</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/EmployeeRecords/index">Employee Records</a>
+                </div>
+                <div class="rowItemRight">
+                    <a href="/EmployeeResponse/index">Employee Response</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/EmployeeResultObject/index">Employee Result Object</a>
+                </div>
+                <div class="rowItemRight">
+                    <a href="/DeductionRecord/index">Deduction Record</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/DeductionResponse/index">Deduction Response</a>
+                </div>
+                <div class="rowItemRight">
+                   <a href="/PayrollPartnerEmployeeNotification/index"> Payroll Partner Employee Notification</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/NotificationResponse/index">Notification Response</a>
+                </div>
+                <div class="rowItemRight">
+                    <a href="/ProductFunctionality/index">Product Functionality</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/apiTestingExpectations/index">API Testing Expectations</a>
+                </div>
+                <div class="rowItemRight">
+                    <a href="/RequiredProductDevelopmentWork/index">Required Product Development Work</a>
+                </div>
+            </div>
+            <div class="sideNavRowContainer">
+                <div class="rowItemLeft">
+                    <a href="/BusinessProcessRequirements/index">Business Process Requirements</a>
+                </div>
+                <div class="rowItemRight">
+                    <a href="/PendingUpdates/index">Pending Updates</a>
+                </div>
+            </div>
+        </div>
+        <div id="renderBody">
+            @RenderBody()
+        </div>
+    </div>
+    <footer>
+        <div>
+            <address>
+                <a href="https://www.employeenavigator.com/"><img id="footerLogo"src="images\employeenavigator.png"></a></br>
+                7979 Old Georgetown Road </br>
+                Suite 300 
+                Bethesda, MD 20814</br>
+                301-583-5180
+            </address>
+        </div>
+            <div class="footerSection">
+                <h2 class="footerH2">Products</h2>
+                <a class="footerLink" href="https://www.employeenavigator.com/Marketplace/Partners">Marketplace</a></br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Products/BenefitsAdministration">Benefits Administration</a></br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Products/Onboarding">New Hire Onboarding</a></br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Products/PTO">Time Off Tracking</a></br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Products/AssetTracking">Asset Tracking</a></br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Products/ACA">ACA and COBRA</a> </br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Products/Payroll">Integrated Payroll</a></br>
+            </div>
+            <div class="footerSection">
+                <h2 class="footerH2">Clients</h2>
+                <a class="footerLink" href="https://www.employeenavigator.com/Clients/#brokers">Brokers</a></br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Clients/#carriers">Carriers</a> </br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Clients/#hr">HR</a></br>
+            </div>
+            <div class="footerSection">
+                <h2 class="footerH2" >Resources</h2>
+                <a class="footerLink" href="https://www.employeenavigator.com/About/Security">Security</a> </br>
+                <a class="footerLink" hr="https://www.employeenavigator.com/About/Press">Press</a> </br>
+                <a class="footerLink" href="https://www.employeenavigator.com/Pricing">Pricing</a> </br>
+                <a class="footerLink" href="https://employeenavigator.zendesk.com/hc/en-us">Help Desk</a></br>
+            </div>
+            <div class="footerSection">
+                <h2 class="footerH2">Company</h2>        
+                <a class="footerLink" href="https://www.employeenavigator.com/About/Leadership">Leadership</a> </br>
+                <a class="footerLink" href="https://www.employeenavigator.com/About/Careers">Careers</a> </br>
+                <a class="footerLink" href="https://www.employeenavigator.com/About/Contact">Contact Us</a> </br>
+            </div>
+    </footer>
+        <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+    </body>
+</html>

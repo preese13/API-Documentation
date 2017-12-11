@@ -1,0 +1,24 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string header = "API Resources";
+    string paragraph1 = "Employee Navigator will provide push resources to Payroll Partners: ";
+    string listItem1 = "Employee demographic";
+    string listItem2 = "Benefit deduction data";
+    string paragraph2 = "Payroll Partners will be responsible to provide:";
+    string listItem3 = "Push notifications to Employee Navigator indicating new or changed demographic data for an individual employee is available";
+    string listItem4 = "Pull resource to enable Employee Navigator to retrieve an individual employee demographic record from the partner system";
+}
+
+<h1>@header</h1>
+<p class="listIntro" listIntro>@paragraph1</p>
+<ul>
+    <li><span id="colorController">@listItem1</span> </li></br>
+    <li><span id="colorController">@listItem2</span></li>
+</ul>
+<p class="listIntro">@paragraph2</p>
+<ul>
+    <li><span id="colorController">@listItem3</span></li></br>
+    <li><span id="colorController">@listItem4</span></li>
+</ul>
+ 
