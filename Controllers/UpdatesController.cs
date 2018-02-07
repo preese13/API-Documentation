@@ -3,7 +3,7 @@ using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers
 {
-    public class PendingUpdatesController : Controller
+    public class UpdatesController : Controller
     {
 
         public IActionResult Index()

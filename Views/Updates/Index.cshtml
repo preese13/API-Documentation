@@ -1,0 +1,162 @@
+@model UpdatesViewModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+    string @header = "Updates";
+    string @version1 = "V 1.4";
+    string @version2 = "V 1.5";
+    string @version3 = "V 1.6";
+    string @version4 = "V 1.7";
+    string @version5 = "V 1.8";
+    string @version6 = "V 1.9";
+    string @change1 = "Added Pay Frequency";
+    string @description1 = "Added employee’s pay frequency to the employee record";
+    string @change2 = "Added Pay Basis and updated guidance for passing Compensation information";
+    string @description2 = "Added employee’s pay basis (indicator of hourly vs. salaried) to the employee record; Added new guidance for how to handle hourly vs. salaried employees and standard hours per week.";
+    string @change3 = "Updated list of deduction types not currently supported";
+    string @description3 = "Third Party Application deductions are not currently supported by the API";
+    string @change4 = "Added additional guidelines for implementation of the API";
+    string @description4 = "Additional information that will guide Payroll partners in implementation of the API";
+    string @change5 = "Updated URL for notifications";
+    string @description5 = "Updated URL to be used for notification of changes";
+    string @change6 = "Removed Fields from API definition";
+    string @description6 = "TerminatedOn, HiredOn, and OriginalHireDate were removed from the API definition";
+    string @change7 = "Added WorkerTaxStatus";
+    string @description7 = "Added field to indicate if employee’s tax status is W2 or 1099";
+    string @change8 = "Corrected valid values for ACA Classification";
+    string @description8 = "Updated the valid values";
+    string @change9 = "Updated URL for notifications";
+    string @description9 = "Updated URL to be used for notification of changes";
+    string @change10 = "Added Benefit Salary and Benefit Salary Effective Date to API";
+    string @description10 = "Added Benefit Salary and Benefit Salary Effective Date to API";
+    string @change11 = "Updated Root URL";
+    string @description11 = "Updated root URL value";
+    string @change12 = "Added Subscriber Groups";
+    string @description12 = "Added Subscriber Group information for handling Multiple EINs";
+    string @change13 = "Added Deduction Code Settings";
+    string @description13 = "Added Deduction Code Setting information";
+    string @change14 = "Added Business Rules for Bureaus";
+    string @description14 = "Added business rules for handling bureaus using a single software provider";
+    string @change15 = "Removed Employee ID from employee record";
+    string @description15 = "Remove Employee ID as a value from the employee record. We only need the Payroll ID in the record.";
+    string @change16 = "Added example of expected response object";
+    string @description16 = "Updated Payroll Partner Resources to include an example of the expected response object";
+    string @change17 = "Added partner testing expectations";
+    string @description17 = "Added API testing expectations";
+    string @change18 = "Clarified SSN being sent on outgoing EN transmissions";
+    string @description18 = "Added clarification to how Employee Navigator is expecting to handle SSNs";
+    string @change19 = "Removed Standard Deduction Codes";
+    string @description19 = "Removed reference to Employee Navigator’s Standard Deduction codes";
+    string @change20 = "Removed Pending Compensation Updates";
+    string @description20 = "Removed pending compensation updates because they have been implemented";
+
+}
+
+<h1>@header</h1>
+<div class="tableContainer">
+    <div class="tableRow">
+        <p><span id="bold">Document Change</span> </p>
+        <p><span id="bold">Version Change</span> </p>
+        <p><span id="bold">Description</span> </p>
+    </div>
+    <div class="tableRow">
+        <p>@change1</p>
+        <p>@version1</p>
+        <p>@description1</p>
+    </div>
+    <div class="tableRow">
+        <p>@change2</p>
+        <p>@version1</p>
+        <p>@description2</p>
+    </div>
+    <div class="tableRow">
+        <p>@change3</p>
+        <p>@version1</p>
+        <p>@description3</p>
+    </div>
+    <div class="tableRow">
+        <p>@change4</p>
+        <p>@version1</p>
+        <p>@description4</p>
+    </div>
+    <div class="tableRow">
+        <p>@change5</p>
+        <p>@version1</p>
+        <p>@description5</p>
+    </div>
+    <div class="tableRow">
+        <p>@change6</p>
+        <p>@version1</p>
+        <p>@description6</p>
+    </div>
+    <div class="tableRow">
+        <p>@change7</p>
+        <p>@version1</p>
+        <p>@description7</p>
+    </div>
+    <div class="tableRow">
+        <p>@change8</p>
+        <p>@version1</p>
+        <p>@description8</p>
+    </div>
+    <div class="tableRow">
+        <p>@change9</p>
+        <p>@version2</p>
+        <p>@description9</p>
+    </div>
+    <div class="tableRow">
+        <p>@change10</p>
+        <p>@version3</p>
+        <p>@description10</p>
+    </div>
+    <div class="tableRow">
+        <p>@change11</p>
+        <p>@version4</p>
+        <p>@description11</p>
+    </div>
+    <div class="tableRow">
+        <p>@change12</p>
+        <p>@version4</p>
+        <p>@description12</p>
+    </div>
+    <div class="tableRow">
+        <p>@change13</p>
+        <p>@version4</p>
+        <p>@description13</p>
+    </div>
+    <div class="tableRow">
+        <p>@change14</p>
+        <p>@version5</p>
+        <p>@description14</p>
+    </div>
+    <div class="tableRow">
+        <p>@change15</p>
+        <p>@version5</p>
+        <p>@description15</p>
+    </div>
+    <div class="tableRow">
+        <p>@change16</p>
+        <p>@version6</p>
+        <p>@description16</p>
+    </div>
+    <div class="tableRow">
+        <p>@change17</p>
+        <p>@version6</p>
+        <p>@description17</p>
+    </div>
+    <div class="tableRow">
+        <p>@change18</p>
+        <p>@version6</p>
+        <p>@description18</p>
+    </div>
+    <div class="tableRow">
+        <p>@change19</p>
+        <p>@version6</p>
+        <p>@description19</p>
+    </div>
+    <div class="tableRow">
+        <p>@change20</p>
+        <p>@version6</p>
+        <p>@description20</p>
+    </div>
+</div>

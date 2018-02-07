@@ -5783,7 +5783,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "rxXgKeQTj523roNVDiaklMT+RgjpjQz1GrS5o+5UH8aAiAbUy0Z2L2mGy58vnPHXlLf7dyNZnBE+7et5osRF9w==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -9595,7 +9595,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "rfhXXh6gWEy1zzL3YnnqKMUYnZdjOk6ZTuZL+gEbLSGX3NGtvQdzuDrZsXCfxTdg/pPONkrNXYKuQjwwfWso6g==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Patrick Reese\\API_Documentation\\API_Documentation.csproj",
+      "projectUniqueName": "c:\\Users\\Patrick Reese\\intern\\API_Documentation\\API_Documentation.csproj",
       "projectName": "API_Documentation",
-      "projectPath": "C:\\Users\\Patrick Reese\\API_Documentation\\API_Documentation.csproj",
+      "projectPath": "c:\\Users\\Patrick Reese\\intern\\API_Documentation\\API_Documentation.csproj",
       "packagesPath": "C:\\Users\\Patrick Reese\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Patrick Reese\\API_Documentation\\obj\\",
+      "outputPath": "c:\\Users\\Patrick Reese\\intern\\API_Documentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12572,14 +12572,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.3"
+            "version": "[2.0.3, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

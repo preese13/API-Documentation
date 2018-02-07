@@ -8,3 +8,13 @@ C:\Users\Patrick Reese\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentati
 C:\Users\Patrick Reese\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.AssemblyInfo.cs
 C:\Users\Patrick Reese\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.dll
 C:\Users\Patrick Reese\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.pdb
+c:\Users\Patrick Reese\intern\API_Documentation\bin\Debug\netcoreapp2.0\API_Documentation.deps.json
+c:\Users\Patrick Reese\intern\API_Documentation\bin\Debug\netcoreapp2.0\API_Documentation.runtimeconfig.json
+c:\Users\Patrick Reese\intern\API_Documentation\bin\Debug\netcoreapp2.0\API_Documentation.runtimeconfig.dev.json
+c:\Users\Patrick Reese\intern\API_Documentation\bin\Debug\netcoreapp2.0\API_Documentation.dll
+c:\Users\Patrick Reese\intern\API_Documentation\bin\Debug\netcoreapp2.0\API_Documentation.pdb
+c:\Users\Patrick Reese\intern\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.csproj.CoreCompileInputs.cache
+c:\Users\Patrick Reese\intern\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.AssemblyInfoInputs.cache
+c:\Users\Patrick Reese\intern\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.AssemblyInfo.cs
+c:\Users\Patrick Reese\intern\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.dll
+c:\Users\Patrick Reese\intern\API_Documentation\obj\Debug\netcoreapp2.0\API_Documentation.pdb

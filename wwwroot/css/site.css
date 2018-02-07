@@ -1,95 +1,92 @@
-﻿html{
-    width: 90vw;
+﻿html {
+    margin: 0px;
 }
+
 body {
     width: 90vw;
     margin: 0px;
     display: flex;
     flex-direction: column;
-
     line-height: 25px;
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
-    color:#003366;
+    color: #003366;
 }
-address{
+
+address {
     text-align: center;
     text-decoration: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#003366; 
+    color: #003366;
     transition: all .2s ease-in-out;
 }
 
-h1{
+h1 {
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     font-size: 35px;
     margin-bottom: 50px;
 }
 
-h3{
+h3 {
     font-family: 'PT Sans', sans-serif;
     font-size: 25px;
 }
 
-h2{
+h2 {
     font-size: 25px;
 }
 
-p{
+p {
     padding-top: 20px;
     line-height: 35px;
 }
 
-nav{
-    width: 100vw;
+nav {
+    width: 99vw;
     height: 70px;
-
     position: fixed;
     top: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
-
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-
-    background: #5CA84E; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #5CA84E, #0e8706); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #5CA84Eed, #0e8706); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #5CA84E, #0e8706); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #5CA84Eed, #0e8706); /* Standard syntax */
-
-
+    background: #5CA84E;
+    background: -webkit-linear-gradient(left top, #5CA84E, #0e8706);
+    background: -o-linear-gradient(bottom right, #5CA84Eed, #0e8706);
+    background: -moz-linear-gradient(bottom right, #5CA84E, #0e8706);
+    background: linear-gradient(to bottom right, #5CA84Eed, #0e8706);
 }
 
-#bodyMain{
+#bodyMain {
     width: 100%;
-    margin-top:125px;
-
+    margin-top: 125px;
     display: flex;
     flex-direction: row;
     padding-top: 25px;
     padding-left: 10px;
-
 }
-ul{
-    color:#5CA84E;
+
+ul {
+    color: #5CA84E;
     list-style: disc;
     font-size: 17px;
     margin-bottom: 50px;
 }
-ol{
-    color:#5CA84E;
+
+ol {
+    color: #5CA84E;
     font-size: 17px;
     margin-bottom: 50px;
 }
 
-#sideNav{
+#sideNav {
     font-family: 'PT Sans', sans-serif;
     width: 35%;
     padding: 20px;
@@ -99,274 +96,246 @@ ol{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    color:#003366;
+    color: #003366;
     font-weight: 700;
 }
-#bold{
+
+#bold {
     font-weight: 700;
 }
-#colorController{
+
+#colorController {
     color: #003366;
     font-size: 13px;
 }
-#renderBody{
+
+#renderBody {
     width: 50%;
     padding: 20px;
     padding-left: 100px;
     padding-right: 100px;
     line-height: 30px;
 }
-footer{
+
+footer {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 250px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 100px;
     margin-top: 30px;
-
-
 }
 
-#sideNavTitle{
+#sideNavTitle {
     width: 90%;
     height: 75px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.sideNavRowContainer{
+.sideNavRowContainer {
     width: 100%;
     height: 100px;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border-right: 1px solid #003366;
-
 }
 
-.rowItemLeft{
+.rowItemLeft {
     width: 50%;
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     padding-left: 15px;
     padding-right: 15px;
-
     transition: all .5s ease-in-out;
 }
 
-.rowItemRight{
+.rowItemRight {
     width: 50%;
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     padding-left: 15px;
     padding-right: 15px;
-
     transition: all .2s ease-in-out;
 }
 
-a:hover{
+a:hover {
     transform: scale(1.1);
 }
 
-
-.pageTitle{
+.pageTitle {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar{
-    color:white;
+.navbar {
+    color: white;
     font-weight: 900;
     font-size: 30px;
     padding-left: 20px;
 }
 
-.navbar:hover{
+.navbar:hover {
     transform: none;
 }
 
-
-#footerLogo{
+#footerLogo {
     width: 20vw;
 }
-.footerSection{
+
+.footerSection {
     text-align: center;
 }
 
-.tableContainer{
+.tableContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100%;
 }
-.tableRow{
+
+.tableRow {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
 }
 
-.tableRow > p{
+.tableRow>p {
     width: 30%;
 }
 
-.smallTableContainer{
+.smallTableContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.smallTableRow{
+
+.smallTableRow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.smallTableRow > p{
+
+.smallTableRow>p {
     width: 50%;
 }
 
-.listIntro{
+.listIntro {
     font-size: 17px;
 }
 
-.noteBorder{
+.noteBorder {
     border-top: 1px solid #003366;
     border-bottom: 1px solid #003366;
     padding: 0px;
 }
 
-.footerSection > a{
-    transition:none;
+.footerSection>a {
+    transition: none;
     font-size: 14px;
 }
-.footerSection > a:hover{
+
+.footerSection>a:hover {
     text-decoration: underline;
     text-decoration-color: #5CA84E;
 }
 
-#hamburger{
+#hamburger {
     color: white;
     display: none;
 }
 
-#cross{
+#cross {
     color: white;
     display: none;
 }
+
 @media screen and (max-width: 1250px) {
-    
-        #sideNav{
-            width: 30%;
-        }
-    
-        #renderBody{
-            width: 70%;
-            padding-right: 0px;
-        }
-    
-        .sideNavRowContainer{
-            flex-direction: column;
-            height: 150px;
-            border: none;
-    
-        }
-    
-        .rowItemLeft{
-            width: 100%;
-            height: 50%;
-            margin-bottom: 15px;
-        }
-    
-        .rowItemRight{
-            width: 100%;
-            height: 50%;
-            margin-bottom: 15px;
-        }
-    
-        #sideNavTitle{
-            border-bottom: 1px solid #003366;
-        }
-        
+    #sideNav {
+        width: 30%;
     }
-    
-    
-
+    #renderBody {
+        width: 70%;
+        padding-right: 0px;
+    }
+    .sideNavRowContainer {
+        flex-direction: column;
+        height: 150px;
+        border: none;
+    }
+    .rowItemLeft {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 15px;
+    }
+    .rowItemRight {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 15px;
+    }
+    #sideNavTitle {
+        border-bottom: 1px solid #003366;
+    }
+}
 
 @media screen and (max-width: 900px) {
-    
-        address{
-            font-size: 10px;
-        }   
-        .footerH2{
-            font-size: 20px;
-        }
-        .footerSection > a{
-            font-size: 10px;
-        }
-    
+    address {
+        font-size: 10px;
     }
-
-@media screen and (max-width: 749px) {
-    footer{
-        display: none;
+    .footerH2 {
+        font-size: 20px;
     }
-
-    #renderbody{
-        padding: 0px;
+    .footerSection>a {
+        font-size: 10px;
     }
-
-    .navbar{
-        display: none;
-    }
-    #hamburger{
-        display: block;
-    }
-
-    #sideNav{
-        width: 100vw;
-        text-align: center;
-        display: none;
-    }
-    
 }
-@media screen and (min-width: 750px) {
-    #sideNav{
-        display: block;
+
+@media screen and (max-width: 750px) {
+    #bodyMain {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25px;
+        width: 80%;
     }
-    #renderBody{
-        display: block;
+    .sideNavRowContainer {
+        flex-direction: row;
+        height: 150px;
+        border: none;
+        font-size: 20px;
     }
-    #hamburger{
+    #sideNav {
+        width: 100%;
+    }
+    #renderBody {
+        padding: 15px;
+        width: 100%;
+        margin: 25px;
+    }
+    body {
+        width: 100%;
+    }
+    footer {
         display: none;
     }
-    #cross{
-        display: none;
-    }
+
 }
